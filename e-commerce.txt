@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRÏK - The Official Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x800/d4d4d4/666666?text=BR%C4%B0K+SPORTS+DEPT');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card-image {
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover .product-card-image {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <!-- Left Logo/Text -->
+            <a href="#" class="flex items-center space-x-2">
+                <span class="text-3xl font-bold tracking-tight">brik.</span>
+            </a>
+            
+            <!-- Right nav icons -->
+            <div class="flex space-x-4 items-center z-10">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <div id="hero-main" class="hero-section min-h-[50vh] sm:min-h-[70vh] flex flex-col items-center justify-end text-center p-6">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight pb-8">brik.</h1>
+    </div>
+
+    <!-- Small Image Grid Section -->
+    <div id="image-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+        <!-- Image Card 1 -->
+        <div class="aspect-w-1 aspect-h-1 overflow-hidden">
+            <img src="https://placehold.co/800x800/f4f4f4/666666?text=Model+1" alt="Model 1" class="w-full h-full object-cover">
+        </div>
+        <!-- Image Card 2 -->
+        <div class="aspect-w-1 aspect-h-1 overflow-hidden">
+            <img src="https://placehold.co/800x800/d4d4d4/666666?text=Model+2" alt="Model 2" class="w-full h-full object-cover">
+        </div>
+        <!-- Image Card 3 -->
+        <div class="aspect-w-1 aspect-h-1 overflow-hidden">
+            <img src="https://placehold.co/800x800/f4f4f4/666666?text=Model+3" alt="Model 3" class="w-full h-full object-cover">
+        </div>
+        <!-- Image Card 4 -->
+        <div class="aspect-w-1 aspect-h-1 overflow-hidden">
+            <img src="https://placehold.co/800x800/d4d4d4/666666?text=Model+4" alt="Model 4" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 py-12 lg:py-20">
+        
+        <!-- Product Grid Section -->
+        <section id="product-list" class="flex flex-col">
+            <div class="flex flex-col mb-8">
+                <h1 class="text-3xl font-medium tracking-tight">the locker room</h1>
+                <p class="text-sm font-light text-gray-600">your game day essentials are all right here!</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <a href="#product-1" class="product-card relative" data-product-id="1">
+                    <div class="w-full aspect-w-1 aspect-h-1 overflow-hidden">
+                        <img src="https://placehold.co/600x600/bde0f0/666666?text=Chroma+Astral" alt="Chroma Astral in Deep Blue" class="product-card-image w-full h-full object-cover">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="text-gray-400 text-xs flex justify-center space-x-0.5 mb-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <h3 class="text-lg font-medium tracking-wide">Chroma Astral in Deep Blue</h3>
+                        <p class="text-sm font-light text-gray-500 mb-1">Deep Blue</p>
+                        <p class="text-gray-800 font-normal">RM249.00</p>
+                    </div>
+                </a>
+                <!-- Product Card 2 -->
+                <a href="#product-2" class="product-card relative" data-product-id="2">
+                    <div class="w-full aspect-w-1 aspect-h-1 overflow-hidden">
+                        <img src="https://placehold.co/600x600/d9534f/ffffff?text=Reversible+Trackset" alt="Reversible Trackset in Red" class="product-card-image w-full h-full object-cover">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="text-gray-400 text-xs flex justify-center space-x-0.5 mb-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <h3 class="text-lg font-medium tracking-wide">Reversible Trackset in Red</h3>
+                        <p class="text-sm font-light text-gray-500 mb-1">Red</p>
+                        <p class="text-gray-800 font-normal">RM949.00</p>
+                    </div>
+                </a>
+                <!-- Product Card 3 -->
+                <a href="#product-3" class="product-card relative" data-product-id="3">
+                    <div class="w-full aspect-w-1 aspect-h-1 overflow-hidden">
+                        <img src="https://placehold.co/600x600/e0e2b3/666666?text=Chroma+Astral" alt="Chroma Astral in Olive Green" class="product-card-image w-full h-full object-cover">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="text-gray-400 text-xs flex justify-center space-x-0.5 mb-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <h3 class="text-lg font-medium tracking-wide">Chroma Astral in Olive Green</h3>
+                        <p class="text-sm font-light text-gray-500 mb-1">Olive Green</p>
+                        <p class="text-gray-800 font-normal">RM249.00</p>
+                    </div>
+                </a>
+                <!-- Product Card 4 - Sold Out -->
+                <a href="#product-4" class="product-card relative" data-product-id="4">
+                    <div class="w-full aspect-w-1 aspect-h-1 overflow-hidden">
+                        <img src="https://placehold.co/600x600/2a2a2a/ffffff?text=Upsized+Chroma" alt="Upsized Chroma Astral in Onyx Black" class="product-card-image w-full h-full object-cover opacity-80">
+                    </div>
+                    <!-- Sold Out Badge -->
+                    <div class="absolute top-4 right-4 bg-black text-white text-xs font-medium px-2 py-1">
+                        Sold out
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="text-gray-400 text-xs flex justify-center space-x-0.5 mb-1">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <h3 class="text-lg font-medium tracking-wide">Upsized Chroma Astral in Onyx Black</h3>
+                        <p class="text-sm font-light text-gray-500 mb-1">Onyx Black</p>
+                        <p class="text-gray-800 font-normal">RM289.00</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Product Details Section (Initially Hidden) -->
+        <section id="product-details" class="hidden">
+            <a href="#" id="back-to-list" class="text-sm text-gray-600 hover:text-gray-900 transition-colors mb-8 flex items-center space-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span>Back to products</span>
+            </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-4">
+                <!-- Product Image -->
+                <div class="w-full aspect-w-1 aspect-h-1 overflow-hidden">
+                    <img id="product-image" src="" alt="Product Image" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Product Details -->
+                <div class="flex flex-col">
+                    <h1 id="product-name" class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2"></h1>
+                    <p id="product-price" class="text-lg text-gray-600 mb-4"></p>
+                    <p id="product-description" class="text-sm text-gray-800 mb-6 leading-relaxed"></p>
+
+                    <!-- Buy button -->
+                    <button class="bg-black text-white text-lg font-medium tracking-wide py-3 px-6 rounded-md hover:bg-gray-800 transition-colors">
+                        Add to Cart
+                    </button>
+
+                    <!-- Payment Icons -->
+                    <div class="flex flex-wrap items-center space-x-4 mt-8">
+                        <span class="text-sm text-gray-500">Secure Payments:</span>
+                        <img src="https://www.svgrepo.com/show/303102/visa-logo.svg" alt="Visa" class="h-6 w-auto">
+                        <img src="https://www.svgrepo.com/show/303120/mastercard-logo.svg" alt="Mastercard" class="h-6 w-auto">
+                        <img src="https://www.svgrepo.com/show/303212/paypal-logo.svg" alt="PayPal" class="h-6 w-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Array of product data
+        const products = [
+            {
+                id: "1",
+                name: "Chroma Astral in Deep Blue",
+                price: "RM249.00",
+                description: "A versatile and stylish bag designed for both everyday adventures and special occasions. Crafted with a premium, smooth finish and featuring a distinctive star logo, this bag combines modern design with timeless elegance.",
+                image: "https://placehold.co/800x800/bde0f0/666666?text=Chroma+Astral"
+            },
+            {
+                id: "2",
+                name: "Reversible Trackset in Red",
+                price: "RM949.00",
+                description: "This reversible trackset is made for versatility and comfort. One side features a vibrant red finish with the BRÏK logo, and the other a simple grey. Perfect for your workout or a casual day out.",
+                image: "https://placehold.co/800x800/d9534f/ffffff?text=Reversible+Trackset"
+            },
+            {
+                id: "3",
+                name: "Chroma Astral in Olive Green",
+                price: "RM249.00",
+                description: "The same versatile and stylish bag as the Deep Blue, but in a sophisticated Olive Green. The perfect accessory to complete your look, no matter the season.",
+                image: "https://placehold.co/800x800/e0e2b3/666666?text=Chroma+Astral"
+            },
+            {
+                id: "4",
+                name: "Upsized Chroma Astral in Onyx Black",
+                price: "RM289.00",
+                description: "A larger version of the popular Chroma Astral, in a sleek and timeless Onyx Black. This bag offers more space while maintaining its stylish profile, making it a great travel companion.",
+                image: "https://placehold.co/800x800/2a2a2a/ffffff?text=Upsized+Chroma"
+            }
+        ];
+
+        // Get elements
+        const productListSection = document.getElementById('product-list');
+        const productDetailsSection = document.getElementById('product-details');
+        const productImage = document.getElementById('product-image');
+        const productName = document.getElementById('product-name');
+        const productPrice = document.getElementById('product-price');
+        const productDescription = document.getElementById('product-description');
+        const heroSection = document.getElementById('hero-main');
+        const imageGrid = document.getElementById('image-grid');
+
+        // Function to render the correct view based on the URL hash
+        function renderView() {
+            const productId = window.location.hash.slice(1).split('-')[1];
+            const product = products.find(p => p.id === productId);
+
+            if (product) {
+                // Show product details view and hide main page sections
+                productImage.src = product.image;
+                productName.textContent = product.name;
+                productPrice.textContent = product.price;
+                productDescription.textContent = product.description;
+                
+                productListSection.classList.add('hidden');
+                heroSection.classList.add('hidden');
+                imageGrid.classList.add('hidden');
+                productDetailsSection.classList.remove('hidden');
+            } else {
+                // Show main product list view
+                productDetailsSection.classList.add('hidden');
+                productListSection.classList.remove('hidden');
+                heroSection.classList.remove('hidden');
+                imageGrid.classList.remove('hidden');
+            }
+        }
+
+        // Listen for changes to the URL hash
+        window.addEventListener('hashchange', renderView);
+
+        // Initial render on page load
+        renderView();
+
+    </script>
+</body>
+</html>
